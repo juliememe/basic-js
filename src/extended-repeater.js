@@ -1,7 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 
-module.exports = 
-function repeater(str, options) {
+module.exports = function repeater(str, options) {
   let result = "";
   let [
     repeatTimes = 1,
@@ -22,9 +21,9 @@ function repeater(str, options) {
       } else continue;
     }
 
-    if (i < repeatTimes-1) {
+    if (i < repeatTimes - 1) {
       result += separator;
     }
   }
   return result;
-}
+};
